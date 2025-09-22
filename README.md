@@ -1,4 +1,4 @@
-# 馃幍 MusicHub
+# MusicHub
 
 MusicHub es la práctica final del curso de Vue.  
 Se trata de una **plataforma de gestión de playlists musicales** donde los usuarios pueden:
@@ -88,7 +88,6 @@ npm run dev
 
 ### Formularios
 
-- Inputs reutilizables (`CustomInput`, `CustomTextArea`)
 - Validaciones en español con Yup
 - Botones deshabilitados si hay errores
 
