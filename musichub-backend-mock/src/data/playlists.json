@@ -1,0 +1,19 @@
+[
+  {
+    "id": "p1",
+    "ownerId": "u1",
+    "name": "Demo Hits",
+    "description": "Canciones de prueba",
+    "coverUrl": "",
+    "isPublic": true,
+    "tracks": [
+      {
+        "id": "t1",
+        "title": "Song A",
+        "artist": "Artist A",
+        "duration": 210,
+        "coverUrl": ""
+      }
+    ]
+  }
+]
