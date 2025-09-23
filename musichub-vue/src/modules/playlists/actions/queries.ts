@@ -1,4 +1,3 @@
-// src/modules/playlists/actions/queries.ts
 import { useQuery, useMutation, useQueryClient } from '@tanstack/vue-query'
 import { http } from '@/api/musicApi'
 
@@ -56,7 +55,6 @@ export function usePlaylist(id: string) {
   })
 }
 
-// Añadir canción
 export function useAddTrack(id: string) {
   const qc = useQueryClient()
   return useMutation({
@@ -66,7 +64,6 @@ export function useAddTrack(id: string) {
   })
 }
 
-// Eliminar canción
 export function useRemoveTrack(id: string) {
   const qc = useQueryClient()
   return useMutation({

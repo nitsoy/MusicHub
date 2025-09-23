@@ -35,13 +35,3 @@ function logout() {
     </section>
   </main>
 </template>
-<!-- <template>
-  <nav>
-    <RouterLink to="/">MusicHub</RouterLink>
-    <template v-if="!isAuthenticated">
-      <RouterLink to="/login">Login</RouterLink>
-      <RouterLink to="/register">Register</RouterLink>
-    </template>
-    
-  </nav>
-</template> -->

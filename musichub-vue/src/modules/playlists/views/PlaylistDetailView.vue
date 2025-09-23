@@ -40,7 +40,6 @@ const [name] = defineEdit('name')
 const [description] = defineEdit('description')
 const [isPublic] = defineEdit('isPublic' as any)
 
-// Cuando llega la playlist, rellenamos el formulario
 watchEffect(() => {
   if (data?.value) {
     setValues({
@@ -65,7 +64,6 @@ async function onDelete() {
   router.push('/playlists')
 }
 
-/** ---------- Form añadir canción (igual que lo tenías) ---------- */
 const trackSchema = yup.object({
   title: yup.string().required('Título obligatorio'),
   artist: yup.string().required('Artista obligatorio'),
@@ -113,7 +111,6 @@ const onAdd = handleSubmit(async (v) => {
     </div>
 
     <div v-else-if="data" class="grid gap-6">
-      <!-- Form editar playlist -->
       <section class="p-4 bg-white rounded-xl shadow">
         <h2 class="text-lg font-medium mb-3">Editar playlist</h2>
         <form @submit.prevent="onEditSubmit" class="grid gap-3 md:grid-cols-3">
@@ -147,7 +144,6 @@ const onAdd = handleSubmit(async (v) => {
         </form>
       </section>
 
-      <!-- (lo de añadir/eliminar canciones se mantiene como ya lo tenías) -->
       <section class="p-4 bg-white rounded-xl shadow">
         <h3 class="font-medium mb-3">Añadir canción</h3>
         <form @submit.prevent="onAdd" class="grid gap-3 md:grid-cols-3">
@@ -193,7 +189,6 @@ const onAdd = handleSubmit(async (v) => {
         </form>
       </section>
 
-      <!-- Lista canciones -->
       <section class="p-4 bg-white rounded-xl shadow">
         <h3 class="font-medium mb-3">Canciones</h3>
         <div v-if="!data.tracks?.length" class="text-slate-600">Aún no hay canciones.</div>
